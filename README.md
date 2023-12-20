@@ -13,7 +13,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/7dfb9665acf31f2c8c2ce.png" alt="Logo">
+  <img src="https://telegra.ph/file/0498a4a05a7ff56938446.jpg" alt="Logo">
 </p>
 <h1 align="center">
   <b>Movie Storage Bot</b>
