@@ -12,9 +12,10 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '28826860'))
-API_HASH = environ.get('API_HASH', '8280d8a26a8d8bd8f64e8cb57cb28366')
-BOT_TOKEN = environ.get('BOT_TOKEN', "5808633500:AAHsHSWhH47eZ-uFPj0ax0biHtRX6myJG4M")
+API_ID = int(environ.get('API_ID', '24004349'))
+API_HASH = environ.get('API_HASH', '
+5aabfb11c262b17d568d828a3100f296')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6428466683:AAG6H46-tpG3GvxxDSGAz2br77-Z30CSliU")
 
 #Port
 PORT = environ.get("PORT", "8080")
@@ -25,9 +26,9 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/0498a4a05a7ff56938446.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1484670284 5418291719 5852366185').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001620891165').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1484670284 5418291719 5852366185').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5977931010 6232570935').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', '')
 auth_grp = environ.get('AUTH_GROUP')
@@ -40,7 +41,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002062708890'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MM_MOVIESSS')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
